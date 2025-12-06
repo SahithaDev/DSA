@@ -4,17 +4,18 @@ for (let i = 0; i < nums.length; i++) {
   myMap.set(nums[i], (myMap.get(nums[i]) || 0) + 1);
 }
 let maxValue = 0;
-let maxElement = 0;
+
 for (let [key, value] of myMap) {
-  if (value > maxValue && key > maxElement) {
+  if (value > maxValue) {
     maxElement = key;
     maxValue = value;
   }
 }
-let result = [];
+let count = 0;
 for (let [key, value] of myMap) {
   if (value === maxValue) {
-    result.push(key);
+    count++;
   }
 }
-console.log(maxValue, result);
+
+console.log(count);

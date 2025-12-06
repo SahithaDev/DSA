@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 arr=[1,2,3,7,5]
 n=len(arr)
 prefix=[0]*(n+1)
@@ -9,3 +10,16 @@ for query in queries:
 
 
 
+=======
+arr=[1,2,3,7,5]
+n=len(arr)
+prefix=[0]*(n+1)
+prefix[0]=0
+for i in range(1,n+1):
+  prefix[i]=prefix[i-1]+arr[i-1]
+  
+for query in queries:
+
+
+
+>>>>>>> 6f605961e3cc53780ef26fe48b2fec06acb87abc

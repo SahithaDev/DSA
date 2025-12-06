@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class MinHeap {
   constructor() {
     this.heap = [2, 5, 8, 10];
@@ -35,6 +34,3 @@ class MinHeap {
 let heap = new MinHeap();
 heap.insert(1);
 console.log(heap);
-=======
-
->>>>>>> 6f605961e3cc53780ef26fe48b2fec06acb87abc

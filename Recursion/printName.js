@@ -2,8 +2,7 @@ function name(n) {
   if (n === 0) {
     return;
   }
-
-  console.log("Sahitha");
+  console.log(n);
   name(n - 1);
 }
-name(5);
+name(10);

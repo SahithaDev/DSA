@@ -1,10 +1,9 @@
-let count = 0;
-function name() {
-  if (count === 5) {
+function name(n) {
+  if (n === 0) {
     return;
   }
-  count++;
+
   console.log("Sahitha");
-  name();
+  name(n - 1);
 }
-name();
+name(5);

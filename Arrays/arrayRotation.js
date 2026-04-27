@@ -1,11 +1,17 @@
-let arr = [1, 2, 3, 4, 5];
-let n = arr.length;
-for (let count = 1; count <= 3; count++) {
-  let temp = arr[n - 1];
-  for (let i = n - 2; i >= 0; i--) {
-    arr[i + 1] = arr[i];
+function reverse(i, j) {
+  while (i < j) {
+    let temp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = temp;
+    i++;
+    j--;
   }
-  arr[0] = temp;
+  return nums;
 }
-
-console.log(arr);
+let nums = [1, 2, 3, 4, 5];
+let k = 3;
+k = k % nums.length;
+reverse(0, nums.length - 1);
+reverse(0, k - 1);
+reverse(k, nums.length - 1);
+console.log(nums);
